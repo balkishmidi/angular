@@ -1,6 +1,8 @@
 
 // etudiant.model.ts
 
+import { Reservation } from "./reservation";
+
 export interface Etudiant {
     idEtudiant: number;
     nomEtudiant: string;
@@ -8,7 +10,6 @@ export interface Etudiant {
     ecole: string;
     cin: number;
     dateNaissance: Date;
-  //  foyer: Foyer; // Make sure to import the correct Foyer model
-    //chambres: Chambre[]; // Make sure to import the correct Chambre model
-  }
+    reservation: Reservation[]; // Make sure to import the correct Chambre model
+}
   

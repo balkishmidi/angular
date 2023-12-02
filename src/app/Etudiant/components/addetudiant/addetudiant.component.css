@@ -2,7 +2,8 @@
 .container{
     max-width: 700px;
   }
-  .formfield{
+
+  .formfield {
     position: relative;
     box-sizing: border-box;
     float: left;
@@ -10,7 +11,18 @@
     padding: 0px;
     border: 0px;
     font-size: 1em;
-  }
+    height: 80px; /* Add a fixed height for the form field container */
+}
+
+.error-container {
+    height: 40px; /* Fixed height for error messages */
+}
+
+/* Rest of your existing CSS styles */
+
+
+
+
   .formfield *{
     box-sizing: border-box;
   }
@@ -67,9 +79,48 @@ button {
     color: #FFF;
     border-radius: 25px;
     transition: all 300ms ease-in-out;
+    margin-left: 120px;
   }
   
   button:hover {
     background-color: HSLA(0, 0%, 100%, .2);
   }
-  
+  .formfield .ng-invalid {
+    border: 1px solid red;
+  }
+  .styled-select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #00bafa;
+    border-radius: 1.5em;
+    box-sizing: border-box;
+    color: #555;
+    background-color: white;
+}
+
+.styled-select:focus,
+.styled-select:valid {
+    outline: none;
+    border-color: #00bafa;
+    box-shadow: 0 0 5px rgba(0, 186, 250, 0.5);
+}
+
+.styled-select:focus + label,
+.styled-select:valid + label {
+    color: #00bafa;
+    font-size: 0.8em;
+    width: auto;
+    height: 1.3em;
+    padding: 0px 0.5em 0px 0.5em;
+    margin: 0px;
+    background: white;
+    transition: 0.2s ease-in-out;
+    top: 0em;
+    left: 2em;
+}
+
+.styled-select option {
+    color: #555;
+}

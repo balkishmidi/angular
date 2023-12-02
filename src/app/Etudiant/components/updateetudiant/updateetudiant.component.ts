@@ -16,7 +16,7 @@ export class UpdateetudiantComponent implements OnInit { // Implement OnInit
     ecole: '',
     cin: 0,
     dateNaissance: new Date(),
-    // ... other fields ...
+    reservation:[]  
   };
 
   constructor(
