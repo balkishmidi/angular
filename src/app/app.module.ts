@@ -11,6 +11,9 @@ import { DeleteetudiantComponent } from './Etudiant/components/deleteetudiant/de
 import { AddetudiantComponent } from './Etudiant/components/addetudiant/addetudiant.component';
 import { StatisticetudiantComponent } from './Etudiant/components/statisticetudiant/statisticetudiant.component';
 import { ReservationModalComponent } from './Etudiant/components/reservation-modal/reservation-modal.component';
+import { PointerHandDirective } from './pointer-hand.directive';
+import { HighlightDirective } from './highlight.directive';
+import { FrontComponent } from './Etudiant/components/front/front.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { ReservationModalComponent } from './Etudiant/components/reservation-mod
     DeleteetudiantComponent,
     AddetudiantComponent,
     StatisticetudiantComponent,
+    PointerHandDirective,
+    HighlightDirective,
+    FrontComponent,
    
     
 

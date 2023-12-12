@@ -5,12 +5,14 @@ import { AlletudiantComponent } from './Etudiant/components/alletudiant/alletudi
 import { FormsModule } from '@angular/forms'; // Ensure this is imported
 import { UpdateetudiantComponent } from './Etudiant/components/updateetudiant/updateetudiant.component';
 import { StatisticetudiantComponent } from './Etudiant/components/statisticetudiant/statisticetudiant.component';
+import { FrontComponent } from './Etudiant/components/front/front.component';
 
 const routes: Routes = [
   { path: 'students/all', component: AlletudiantComponent },
   { path: 'students/add', component: AddetudiantComponent },
   { path: 'students/update/:id', component: UpdateetudiantComponent },
-  { path: 'statistic/students', component: StatisticetudiantComponent },
+
+  { path: 'front', component: FrontComponent },
   { path: 'alletudiant', loadChildren: () => import('./alletudiant/alletudiant.module').then(m => m.AlletudiantModule) },
 
 

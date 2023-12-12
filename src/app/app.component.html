@@ -8,8 +8,8 @@
 
 </head>
 <body>
-    <div class="sidebar">
-        <div class="logo">
+    <div *ngIf="showNavBar" class="sidebar">
+                <div class="logo">
             <img src="../assets/images/unihaven.png" alt="logo" style="width: 200px; vertical-align: middle; margin:-30px;"> <!-- Adjust width as needed -->
         </div>
         
@@ -22,7 +22,7 @@
      <a routerLink="statistic/students"(click)="toggleEtudiants()"><i class="fa fa-user"></i> Etudiants</a>
     <div *ngIf="showEtudiantsOptions">
         <ul>
-            <a routerLink="/students/all"><i class="fa fa-users"></i> All Students</a>
+            <a routerLink="/alletudiant"><i class="fa fa-users"></i> All Students</a>
             <a routerLink="/students/add"><i class="fa fa-user-plus"></i> Add Student</a>
         
         </ul>
